@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": "MartinaMachine"
+    },
+    "location": {
+      "value": "swedencentral"
+    },
+    "adminPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCYVoYAyefLMf2E+y2nthnSOKC7rGSzqyqmrE/o2x6LdP7HzbxmcteG+lNBciHl5uoAmYiXgumEEuhqm+lVuto7Q6XYAhj8+33DHEX9bcqe5SvlGW7umMk2YrW0o8BfljLwck8kUYeyRTU8ikhT7k6DnFtCw1K84C7ExPZ1U90Ianc/CaDrnMs+8jnvfWZRjqvQAlxTMagAHnFn+APafKGZpJhqnaRGMeiYTsvqoBo1jIsW9yeKh3HN2wLMIe+Rm/En49hTB4EB3TkjqlmJAmbtZnNDLPOcMCaqT/FLS79b0RcQ+1pPM4nXNIBZxwAsVb9wZk7VyY/whLNTv2Ej57SdlyoDvoX4eLhqFXr+jNeoFF4JNv4afP6oXs1Hvqm47gCN8Pr1qDr2aQmmBRY3wQuNELrGbiShz+xWquLhC83tMo7lk5rAkuWxUKdPEQGS9JMG3x+XFJWUqfju7plAqf+ZH8ToA55+G2A00zUEjWNJi1ytiE5o9i2AfscN7D/E4njbLnc6hA4gt4rEyrX+xLiIWvs0BwR1fkQl/tHjac2ZvCcfQ7XqbHsskzMxPN0lMIsC8cRmRT7PHF1IMtlW36tXzs3llbRJ6a8CYyV6ddpAfmFN6cTQy4IQhDkKHMpHPWf4fn5yNg07n0tIITbu2UH77D81SV0oa2CdsgLMnYCPNw== marti@LAPTOP-O5GFI448"
+    }
+  }
+}

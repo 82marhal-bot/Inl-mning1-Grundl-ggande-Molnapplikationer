@@ -1,0 +1,113 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6fb;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Färgschema */
+:root {
+    --primary-color: #5a67d8;
+    --accent-color: #7c3aed;
+}
+
+/* Knapp */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Informationskort */
+.info-card {
+    background: linear-gradient(135deg, #5a67d8, #7c3aed);
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.info-card ul {
+    padding-left: 20px;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+}
+
+
+.hero-box {
+    background: white;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 600px;
+}
+
+.hero-box h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-box p {
+    color: #6c757d;
+}
+
+
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ .hero-section {
+        background: linear-gradient(135deg, #0078d4 0%, #001e36 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .info-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 1.5rem;
+    }
+
+    .status-badge {
+        background-color: #28a745;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        display: inline-block;
+    }

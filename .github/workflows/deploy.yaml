@@ -1,0 +1,38 @@
+name: Deploy Martina App
+
+on:
+  push:
+    branches: [ main ] # Körs varje gång du pushar till main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4 # Hämtar din kod
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Publish
+      run: dotnet publish -c Release -o ./publish
+
+    - name: Deploy to Azure VM
+      uses: appleboy/scp-action@master
+      with:
+        host: 20.240.90.245
+        username: azureuser
+        key: ${{ secrets.SSH_PRIVATE_KEY }} # Din hemliga privata nyckel
+        source: "./publish/*"
+        target: "/var/www/martina-app"
+        strip_components: 1
+
+    - name: Restart Service
+      uses: appleboy/ssh-action@master
+      with:
+        host: 20.240.90.245
+        username: azureuser
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: sudo systemctl restart martina-app.service
